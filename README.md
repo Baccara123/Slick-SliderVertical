@@ -323,4 +323,4 @@ Slick works on IE8+ in addition to other modern browsers such as Chrome, Firefox
 jQuery 1.7
 
 #### License
-Copyright (c) 2017 Ken BACCARA
+Copyright (c) 2017
