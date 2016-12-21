@@ -147,11 +147,56 @@ $(".slider").slick({
 
     }]
 });
+
+version vertical BACCARA
+
+var $s = $(".slider");
+$s.slick({
+    autoplay: false,
+    autoplaySpeed: 600,
+    slidesToShow: 3,
+    responsive: [{ 
+        breakpoint: 1000,
+        settings: {
+            slidesToShow: 4
+        } 
+    }]
+});
+// =============================================
+//  Now lets add a bunch of unique breakpoints.
+// =============================================
+$s.slick("setOption", "responsive", [{
+    breakpoint: 900, 
+    settings: { slidesToShow: 3 }
+}], true);
+// =============================================
+//  we shouldnt see this next one, as we overwrite it later.
+// =============================================
+$s.slick("setOption", "responsive", [{
+    breakpoint: 500, 
+    settings: { slidesToShow: 2 }
+}], true);
+// =============================================
+//  test for adding an array of breakpoints.
+// =============================================
+$s.slick("setOption", "responsive", [{
+    breakpoint: 800, 
+    settings: { slidesToShow: 2, centerMode: true }
+},{
+    breakpoint: 700, 
+    settings: { slidesToShow: 3, vertical: true, verticalSwiping: true }
+}], true);
+// =============================================
+//  Below here we test adding a few duplicates.
+// =============================================
+$s.slick("setOption", "responsive", [{
+    breakpoint: 500, 
+    settings: { slidesToShow: 5 }
+},{
+    breakpoint: 500, 
+    settings: { slidesToShow: 3, fade: true }
+}], true);
 ```
-
-
-
-
 ### Events
 
 In slick 1.4, callback methods were deprecated and replaced with events. Use them before the initialization of slick as shown below:
@@ -278,9 +323,4 @@ Slick works on IE8+ in addition to other modern browsers such as Chrome, Firefox
 jQuery 1.7
 
 #### License
-
-Copyright (c) 2014 Ken Wheeler
-
-Licensed under the MIT license.
-
-Free as in Bacon.
+Copyright (c) 2017 Ken BACCARA
