@@ -1,4 +1,4 @@
-# Slick-SliderVertical version Baccara responsive
+# Slick-SliderVertical version BACC responsive
 
 [1]: <https://github.com/Baccara123/Slick-SliderVertical>
 
@@ -15,7 +15,7 @@ to serve the files as close, and fast as possible to your users:
 - https://www.jsdelivr.com/projects/jquery.slick
 
 
-Version vertical BAC
+Version vertical BACC
 ```javascript
 var $s = $(".slider");
 $s.slick({
