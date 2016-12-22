@@ -15,7 +15,7 @@ to serve the files as close, and fast as possible to your users:
 - https://www.jsdelivr.com/projects/jquery.slick
 
 
-version vertical BACCARA
+Version vertical BAC
 ```javascript
 var $s = $(".slider");
 $s.slick({
